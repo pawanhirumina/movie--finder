@@ -15,7 +15,6 @@ A simple React application that allows users to search for movies using a text i
 <p align="left">
   <img src="https://skillicons.dev/icons?i=react,vite,js,css,html,framer-motion" alt="skill-icons" />
 
-  ![Framer Motion](https://www.framer.com/images/shared/logo.svg)
 
 </p>
 
