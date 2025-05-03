@@ -1,11 +1,12 @@
-import React from 'react';
-import MovieSearch from './components/MovieSearch';
-
+import React from "react";
+import MovieSearch from "./components/MovieSearch";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
+    <div style={{ flex: 1 }}>
       <MovieSearch />
+      <Footer />
     </div>
   );
 }

@@ -89,7 +89,9 @@ function MovieSearch() {
             <strong>{movie.Title}</strong> ({movie.Year})
           </h3>
           <p><strong>Language: </strong>{movie.Language}</p>
-          <p><strong>Plot: </strong>{movie.Plot}</p>
+          {/* <p><strong>Plot: </strong>{movie.Plot}</p> */}
+          <p><strong>Plot: </strong>{movie.Plot.length > 100 ? movie.Plot.slice(0, 100) + "..." : movie.Plot}</p>
+
         </div>
       </motion.div>
     </div>
