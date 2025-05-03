@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { motion } from 'framer-motion';
+
 
 
 // const API_KEY = "8c996723";
@@ -65,29 +67,35 @@ function MovieSearch() {
       </div>
 
       <div className="movie-grid" style={{ marginTop: "20px" }}>
-        {movies.map((movie) => (
-          <div key={movie.imdbID} className="cards">
-            <div className="card" style={{ width: "100%" }}>
-              <div className="img">
-              <img
-                src={movie.Poster}
-                alt={movie.Title}
-                className="card-img-top"
-                loading="lazy"
-              />
-              </div>
-              <div className="card-body">
-                <h3 className="card-title">
-                  <strong>{movie.Title}</strong> ({movie.Year})
-                </h3>
-                <p><strong>Language : </strong>{movie.Language}</p>
-                <p><strong>Plot : </strong>{movie.Plot}</p>
-              </div>
-            </div>
-          </div>
-        ))}
-        {movies.length === 0 && query && <p>No movies found.</p>}
-      </div>
+  {movies.map((movie, index) => (
+    <div key={movie.imdbID} className="cards">
+      <motion.div
+        className="card"
+        style={{ width: "100%" }}
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: index * 0.2 }} // ✅ works here
+      >
+        <div className="img">
+          <img
+            src={movie.Poster}
+            alt={movie.Title}
+            className="card-img-top"
+            loading="lazy"
+          />
+        </div>
+        <div className="card-body">
+          <h3 className="card-title">
+            <strong>{movie.Title}</strong> ({movie.Year})
+          </h3>
+          <p><strong>Language: </strong>{movie.Language}</p>
+          <p><strong>Plot: </strong>{movie.Plot}</p>
+        </div>
+      </motion.div>
+    </div>
+  ))}
+  {movies.length === 0 && query && <p>No movies found.</p>}
+</div>
     </div>
   );
 }
