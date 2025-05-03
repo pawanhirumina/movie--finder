@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-const API_KEY = "8c996723";
+console.log('OMDB:', import.meta.env.VITE_OMDB_API_KEY);
+
+// const API_KEY = "8c996723";
+const API_KEY = import.meta.env.VITE_OMDB_API_KEY;
 
 function MovieSearch() {
   const [query, setQuery] = useState("");
