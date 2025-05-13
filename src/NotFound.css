@@ -1,0 +1,42 @@
+.notfound-body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: center;
+  padding: 20px;
+}
+.notfound-body h1 {
+  font-size: 2rem;
+}
+.notfound-body p, a {
+    font-size: 1rem;
+    text-align: center;
+}
+.notfound-body a {
+  color: var(--color-accent);
+}
+
+@media (max-width: 425px) {
+  .notfound-body {
+    padding: 0 50px;
+  }
+}
+@media (min-width: 768px) {
+  .notfound-body {
+    padding: 0 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .notfound-body {
+    padding: 0 100px;
+  }
+  .notfound-body h1 {
+    font-size: 2.5rem;
+  }
+  .notfound-body p, a {
+    font-size: 1rem;
+  }
+}
