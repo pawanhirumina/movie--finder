@@ -4,7 +4,6 @@ import MovieSearch from "./components/MovieSearch";
 import Footer from "./components/Footer";
 
 import NotFound from "./components/NotFound";
-import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 
 
 function App() {
