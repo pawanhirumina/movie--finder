@@ -1,4 +1,4 @@
-.notfound_body {
+.notfound-body {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -8,34 +8,34 @@
   text-align: center;
   padding: 0 20px;
 }
-.notfound_body h1 {
+.notfound-body h1 {
   font-size: 2rem;
   text-align: center;
 }
-.notfound_body a {
+.notfound-body a {
   color: var(--color-accent);
 }
-.notfound_body p,
+.notfound-body p,
 a {
   text-align: center;
   font-size: 1rem;
 }
 
 @media (max-width: 425px) {
-  .notfound_body {
+  .notfound-body {
     padding: 0 50px;
   }
 }
 @media (min-width: 768px) {
-  .notfound_body {
+  .notfound-body {
     padding: 0 50px;
   }
 }
 @media (min-width: 1024px) {
-  .notfound_body {
+  .notfound-body {
     padding: 0 100px;
   }
-  .notfound_body h1 {
-  font-size: 3rem;
-}
+  .notfound-body h1 {
+    font-size: 3rem;
+  }
 }
