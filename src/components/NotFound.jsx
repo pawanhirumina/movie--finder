@@ -3,13 +3,9 @@ import React from "react";
 
 const NotFound = () => {
   return (
-<<<<<<< HEAD
     <div className="notfound-body">
       <h1 className="notfound-container">_404</h1>
-=======
-    <div className="notfound_body">
-      <h1 className="notfound_container">_404</h1>
->>>>>>> testing
+
       <p>
         Looks like you’ve followed a broken link or entered a URL that doesn’t
         exist on this site.
